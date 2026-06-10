@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ==============================================================================
+       SEO METADATA OPTIMIZATION
+       ============================================================================== -->
+  <title> American home recipes</title>
+  <meta name="description" content="Explore traditional, authentic, and legendary recipes from across the United States. From Southern Fried Chicken to New York Cheesecakes, cook your favorites.">
+  
+  <!-- Open Graph Protocol Tags (Social Sharing) -->
+  <meta property="og:title" content="American
+Home Recipes | Traditional American Comfort Food">
+  <meta property="og:description" content="Savor step-by-step instructions for 30 iconic American recipes with complete lists of ingredients and nutritional values.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=1200">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ais-dev-nvk3xvfxlmhnza3hppyq2r-87708463965.europe-west2.run.app">
+  
+  <!-- Structured Data Markup (Organization Schema for SEO Search Appearance) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "American
+Home Recipes",
+    "url": "https://ais-dev-nvk3xvfxlmhnza3hppyq2r-87708463965.europe-west2.run.app",
+    "description": "Authentic, traditional comfort food recipes native to the diverse regions of the United States."
+  }
+  </script>
+
+  <!-- Google Web Fonts & Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="icon" type="image/png" href="images/icon.webp">
+  <link rel="apple-touch-icon" href="images/icon.webp">
+</head>
+<body>
+
+  <!-- ==============================================================================
+       HEADER SECTION: Site Navigation and Actions
+       ============================================================================== -->
+  <header class="main-header" id="main-header">
+    <div class="container header-container">
+      
+      <!-- Brand Identity Logo -->
+      <a href="index.html" class="brand-logo" id="header-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span>American <br> <span class="br"> Home  Recipes </span> <br> </span>
+      </a>
+
+      <!-- Desktop-Only Nav Links -->
+      <nav class="desktop-nav" id="desktop-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Primary Right Header Interactions -->
+      <div class="header-actions">
+        <!-- Open Slide Search bar Toggle -->
+        <button class="search-toggle-btn" id="search-toggle-btn" aria-label="Open search bar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <!-- Tap-Trigger Mobile Burger -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==============================================================================
+       HEADER OVERLAYS: Sliding Search & Backdrop drawer
+       ============================================================================== -->
+  
+  <!-- Slide-down Search Bar -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="container">
+      <form class="search-form-container" id="header-search-form" role="search">
+        <input type="search" placeholder="Search by food name, region, or ingredients (e.g. Brisket, Apple)..." class="search-input" id="header-search-input" name="q" aria-label="Search recipes">
+        <button type="submit" class="search-submit-btn">Search Info</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu Drawer -->
+  <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation menu">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="recipes.html" class="mobile-nav-link">Search Recipes</a>
+    <a href="about.html" class="mobile-nav-link">Author Story</a>
+    <a href="contact.html" class="mobile-nav-link">Get In Touch</a>
+    <a href="privacy-policy.html" class="mobile-nav-link" style="font-size: 1rem; margin-top: auto; color: var(--color-text-muted);">Privacy Terms</a>
+  </nav>
+
+  <!-- Dark blurring backdrop behind the drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- ==============================================================================
+       MAIN BODY CONTENT
+       ============================================================================== -->
+  <main id="main-content">
+
+    <!-- 1. HERO BANNER: Atmospheric Welcome -->
+    <section class="hero-section" id="home-hero">
+      <img src="/images/hero image.webp" alt="Beautiful kitchen setting" class="hero-bg-image">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-subtitle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>Legendary Traditional Flavors</span>
+          </div>
+          <h1 class="hero-title">Discover the Best of American Comfort Cuisine</h1>
+          <p class="hero-desc">Take a culinary journey across the United States. We serve 30 authentic regional specialties with clear, zero-fuss step-by-step guides.</p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="recipes.html" class="btn btn-primary" id="cta-view-all">Explore 30 Recipes</a>
+            <a href="about.html" class="btn btn-secondary">Our Culinary Journey</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FEATURED RECIPES SECTION: Showcasing Highlights -->
+    <section class="section-padding" id="section-featured">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Featured Specialties</h2>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">Carefully selected traditional culinary landmarks from across America.</p>
+          </div>
+          <a href="recipes.html" class="section-link">
+            <span>View All</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <!-- Recipe cards filled dynamically from main.js -->
+        <div class="recipe-grid" id="featured-recipes-grid"></div>
+      </div>
+    </section>
+
+    <!-- Google AdSense - In-Feed Mid-Page Responsive Sponsor Slot -->
+    <div class="container adsense-container" style="margin-top: 0; margin-bottom: 3.5rem;">
+      <div class="adsense-placeholder">
+        <span class="adsense-badge">Sponsor Advertisement</span>
+        <p class="adsense-text">Responsive Ad Unit Placeholder</p>
+        <p class="adsense-desc">(Google AdSense crawler detects this optimized container for non-intrusive culinary sponsorships when approved)</p>
+        <!-- Paste your AdSense ad code snippet <ins class="adsbygoogle" ...></ins> here -->
+      </div>
+    </div>
+
+    <!-- 3. POPULAR CATEGORIES GRID: Segmented search links -->
+    <section class="section-padding" id="section-categories" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <h2 class="section-title" style="display: inline-block;">Browse by Category</h2>
+          <p style="max-width: 600px; margin: 1rem auto 0 auto;">Select your preferred meal courses to filter our catalog of traditional receipts instantly.</p>
+        </div>
+
+        <div class="categories-container" id="categories-container">
+          
+          <a href="recipes.html?category=mains" class="category-card" id="cat-mains">
+            <span class="category-card-icon">
+              <!-- Chef Hat SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18V6a6 6 0 1 1 12 0v12M4 18h16M12 2v4M8 12h8"/></svg>
+            </span>
+            <span class="category-card-name">Mains</span>
+            <span class="category-card-count">13 Recipes</span>
+          </a>
+
+          <a href="recipes.html?category=desserts" class="category-card" id="cat-desserts">
+            <span class="category-card-icon">
+              <!-- Cake SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11V3M12 3L9 6M12 3l3 3"/></svg>
+            </span>
+            <span class="category-card-name">Desserts</span>
+            <span class="category-card-count">8 Recipes</span>
+          </a>
+
+          <a href="recipes.html?category=breakfast" class="category-card" id="cat-breakfast">
+            <span class="category-card-icon">
+              <!-- Coffee/Breakfast SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM6 2v2M10 2v2M14 2v2"/></svg>
+            </span>
+            <span class="category-card-name">Breakfast</span>
+            <span class="category-card-count">3 Recipes</span>
+          </a>
+
+          <a href="recipes.html?category=sides" class="category-card" id="cat-sides">
+            <span class="category-card-icon">
+              <!-- Bowl SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12H2c0 5.523 4.477 10 10 10s10-4.477 10-10zM12 2v4M12 6c-2 0-3 1-3 3M12 6c2 0 3 1 3 3"/></svg>
+            </span>
+            <span class="category-card-name">Sides</span>
+            <span class="category-card-count">3 Recipes</span>
+          </a>
+
+          <a href="recipes.html?category=soups-salads" class="category-card" id="cat-soups">
+            <span class="category-card-icon">
+              <!-- Salad Soup bowl SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-10 10c0 5.5 4.5 10 10 10s10-4.5 10-10M2 12h20M12 22V12"/></svg>
+            </span>
+            <span class="category-card-name">Soups & Salads</span>
+            <span class="category-card-count">3 Recipes</span>
+          </a>
+
+          <a href="recipes.html" class="category-card" id="cat-all">
+            <span class="category-card-icon">
+              <!-- BookOpen SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </span>
+            <span class="category-card-name">All Food</span>
+            <span class="category-card-count">30 Recipes</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LATEST RECIPES SECTION: Newly catalogued items -->
+    <section class="section-padding" id="section-latest">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Latest on the Table</h2>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">Our newest culinary entries with premium high-definition baking steps.</p>
+          </div>
+          <a href="recipes.html" class="section-link">
+            <span>Explore All</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <!-- Recipe cards filled dynamically from main.js -->
+        <div class="recipe-grid" id="latest-recipes-grid"></div>
+      </div>
+    </section>
+
+    <!-- 5. NEWSLETTER TRAY: Clean and high-contrast opt-in section -->
+    <section class="container" style="margin-bottom: 5rem;">
+      <div class="newsletter-section" id="newsletter-form-section">
+        <div class="newsletter-grid">
+          <div>
+            <h2 class="newsletter-title">Subscribe to Flavor Club</h2>
+            <p class="newsletter-desc">Receive regional recipes, seasonal baking tips, and culinary histories delivered weekly to your inbox. No spam, ever.</p>
+          </div>
+          <div>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Your primary email address..." class="newsletter-email-input" required aria-label="Email address" id="news-email">
+              <button type="submit" class="newsletter-btn">Join Table</button>
+            </form>
+            
+            <!-- Success Confirmation Banner -->
+            <div class="toast-success" id="newsletter-success-toast">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Successfully subscribed! Check your inbox for the welcome pack.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================================================
+       FOOTER SECTION: Branding, directory links, and legal
+       ============================================================================== -->
+  <footer class="main-footer" id="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Left Brand Foot Block -->
+        <div class="footer-brand-column">
+          <a href="index.html" class="brand-logo footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>American <br> <span class="br"> Home  Recipes </span> <br> </span>
+          </a>
+          <p class="footer-brand-desc">Celebrating the rich diversity and deep historical roots of United States local comfort, regional cooking, and homestyle baking.</p>
+          
+          <!-- Social icons links (non-functional illustrative blocks with proper accessibility) -->
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Follow us on Pinterest">P</a>
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">I</a>
+            <a href="#" class="social-link" aria-label="Follow us on YouTube">Y</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Directory courses -->
+        <div>
+          <h4 class="footer-column-title">Recipe Types</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="recipes.html?category=mains">Savory Mains</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=desserts">Baking & Desserts</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=breakfast">Morning Griddle</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=sides">Crispus Sides</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: About our project -->
+        <div>
+          <h4 class="footer-column-title">Company</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="about.html">Author Story</a></li>
+            <li class="footer-link-item"><a href="contact.html">Write to Us</a></li>
+            <li class="footer-link-item"><a href="privacy-policy.html">Privacy & Terms</a></li>
+            <li class="footer-link-item"><a href="404.html">Custom 404</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Advertising AdSense notice block -->
+        <div>
+          <h4 class="footer-column-title">Sponsors</h4>
+          <p style="font-size: 0.85rem; color: #a8a29e; line-height: 1.5;">This cooking portal is fully optimized with clean structural headers and metadata slots for non-intrusive AdSense sponsors placements.</p>
+        </div>
+
+      </div>
+
+      <!-- Foot Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 American
+Home Recipes. All rights reserved. Made for food lovers.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="contact.html">Advertise</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link master Vanilla JS -->
+  <script src="js/main.js"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

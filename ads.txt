@@ -1,0 +1,10 @@
+# ==============================================================================
+# AUTHORIZED DIGITAL SELLERS (ADS.TXT) FOR American
+Home Recipes
+# ==============================================================================
+# INSTRUCTIONS for user: Replace "pub-0000000000000000" with your actual 
+# 16-digit Google AdSense Publisher ID (e.g. pub-1234567890123456)
+# to authorize this domain for monetization.
+# ==============================================================================
+
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

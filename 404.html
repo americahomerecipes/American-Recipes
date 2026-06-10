@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ==============================================================================
+       SEO METADATA OPTIMIZATION (Prevent crawler indexing of 404 pages)
+       ============================================================================== -->
+  <title>Page Not Found - 404 Error | American
+Home Recipes</title>
+  <meta name="robots" content="noindex, follow">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==============================================================================
+       HEADER SECTION
+       ============================================================================== -->
+  <header class="main-header" id="main-header">
+    <div class="container header-container">
+      
+      <a href="index.html" class="brand-logo" id="header-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span>American <br> <span class="br"> Home  Recipes </span> <br> </span>
+      </a>
+
+      <nav class="desktop-nav" id="desktop-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-toggle-btn" id="search-toggle-btn" aria-label="Open search bar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Sliding Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="container">
+      <form class="search-form-container" id="header-search-form" role="search">
+        <input type="search" placeholder="Search by name, ingredients, or state..." class="search-input" id="header-search-input" name="q" aria-label="Search recipes">
+        <button type="submit" class="search-submit-btn">Search Info</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation menu">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="recipes.html" class="mobile-nav-link">Search Recipes</a>
+    <a href="about.html" class="mobile-nav-link">Author Story</a>
+    <a href="contact.html" class="mobile-nav-link">Get In Touch</a>
+    <a href="privacy-policy.html" class="mobile-nav-link" style="font-size: 1rem; margin-top: auto; color: var(--color-text-muted);">Privacy Terms</a>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- ==============================================================================
+       MAIN CONTENT: Error notification block
+       ============================================================================== -->
+  <main id="main-content">
+    <div class="container">
+      <section class="error-layout" id="error-section">
+        
+        <!-- Large visual code -->
+        <div class="error-code" id="error-code">404</div>
+        
+        <h1 class="error-title">Recipe Missing From Table</h1>
+        <p class="error-desc text-muted">The stove has cooled and we couldn't find the page you were searching for. It might have been relocated or cooked out. Try looking up comfort classics below:</p>
+
+        <!-- Inline search assistance box -->
+        <div style="width: 100%; max-width: 480px; margin-bottom: 2.5rem;">
+          <form class="search-form-container" style="display: flex;" action="/recipes.html" method="get">
+            <input type="search" placeholder="Find Burger, Cheesecake, Brisket..." class="search-input" name="search" required aria-label="Helper search box" style="width: 100%;">
+            <button type="submit" class="search-submit-btn">Search</button>
+          </form>
+        </div>
+
+        <div style="display: flex; gap: 1rem;">
+          <a href="index.html" class="btn btn-primary" id="btn-404-home">Back to Parlor</a>
+          <a href="recipes.html" class="btn btn-secondary">Explore Vault</a>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ==============================================================================
+       FOOTER SECTION
+       ============================================================================== -->
+  <footer class="main-footer" id="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand-column">
+          <a href="index.html" class="brand-logo footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>American <br> <span class="br"> Home  Recipes </span> <br> </span>
+          </a>
+          <p class="footer-brand-desc">Celebrating the rich culinary diversity and deep historical roots of local confort cooking and baking across the United States.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Recipe Types</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="recipes.html?category=mains">Savory Mains</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=desserts">Baking & Desserts</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=breakfast">Morning Griddle</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=sides">Crisp Sides</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Company</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="about.html">Author Story</a></li>
+            <li class="footer-link-item"><a href="contact.html">Write to Us</a></li>
+            <li class="footer-link-item"><a href="privacy-policy.html">Privacy & Terms</a></li>
+            <li class="footer-link-item"><a href="404.html">Custom 404</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Sponsors</h4>
+          <p style="font-size: 0.85rem; color: #a8a29e; line-height: 1.5;">This cooking portal is fully optimized with clean structural headers and metadata slots for non-intrusive AdSense sponsors placements.</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 American
+Home Recipes. All rights reserved. Made for food lovers.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="contact.html">Advertise</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link master Vanilla JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

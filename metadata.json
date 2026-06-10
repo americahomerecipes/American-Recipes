@@ -1,0 +1,6 @@
+{
+  "name": "United States Recipes",
+  "description": "A static website featuring legendary traditional American recipes built using HTML, CSS, and Vanilla JavaScript, including full search and dynamic categorizations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

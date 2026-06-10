@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ==============================================================================
+       SEO OPTIMIZED METADATA & OPEN GRAPH (Placeholder Template Sample)
+       ============================================================================== -->
+  <title>Classic American Recipe | American
+Home Recipes</title>
+  <meta name="description" content="Master the art of cooking the perfect Classic American Burger. Flawless 80/20 beef chuck patties griddled with melting cheddar cheese in buttered brioche bun.">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Classic American Burger Recipe | American
+Home Recipes">
+  <meta property="og:description" content="A pristine step-by-step masterclass recipe for juicy cheddar burgers in toasted brioche buns. Complete ingredients checklist & nutrition table.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1200">
+  <meta property="og:type" content="recipe">
+  
+  <!-- Recipe Schema.org JSON-LD structured data (Major SEO boost for rich Google snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Classic American Burger",
+    "image": [
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1200"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "US Heritage Culinary Team"
+    },
+    "datePublished": "2026-06-05",
+    "description": "The ultimate juicy griddled beef patty sandwich topped with melted cheddar, butter lettuce, and heirloom tomato inside toasted toasted brioche buns.",
+    "prepTime": "PT15M",
+    "cookTime": "PT10M",
+    "recipeYield": "4",
+    "recipeCategory": "Mains",
+    "recipeCuisine": "American",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "520 calories",
+      "fatContent": "32 grams",
+      "carbohydrateContent": "26 grams",
+      "proteinContent": "34 grams",
+      "sodiumContent": "680 milligrams"
+    },
+    "recipeIngredient": [
+      "1.5 lbs ground beef (80/20 chuck)",
+      "4 brioche or standard hamburger buns",
+      "4 slices cheddar or American cheese",
+      "1 large heirloom tomato, sliced",
+      "4 crisp butter lettuce leaves",
+      "1 red onion, thinly sliced",
+      "2 tbsp unsalted butter",
+      "Salt and freshly cracked black pepper",
+      "1/3 cup mayonnaise",
+      "2 tbsp ketchup",
+      "1 tbsp sweet pickle relish",
+      "1 tsp yellow mustard"
+    ],
+    "recipeInstructions": [
+      {
+        "@type": "HowToStep",
+        "text": "Shape ground beef into 4 patties, pressing an indentation in the center of each."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Mix mayonnaise, ketchup, relish, and mustard in small bowl for burger sauce."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Cook patties on a hot griddle for 3-4 minutes per side. Cheese in final minute."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Butter and toast buns, then assemble burgers."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts & Master Stylesheet Link -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- ==============================================================================
+       HEADER SECTION
+       ============================================================================== -->
+  <header class="main-header" id="main-header">
+    <div class="container header-container">
+      
+      <a href="index.html" class="brand-logo" id="header-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span>American <br> <span class="br"> Home  Recipes </span> <br> </span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-nav" id="desktop-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-toggle-btn" id="search-toggle-btn" aria-label="Open search bar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Sliding Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="container">
+      <form class="search-form-container" id="header-search-form" role="search">
+        <input type="search" placeholder="Search by name, ingredients, or state..." class="search-input" id="header-search-input" name="q" aria-label="Search recipes">
+        <button type="submit" class="search-submit-btn">Search Info</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation menu">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="recipes.html" class="mobile-nav-link">Search Recipes</a>
+    <a href="about.html" class="mobile-nav-link">Author Story</a>
+    <a href="contact.html" class="mobile-nav-link">Get In Touch</a>
+    <a href="privacy-policy.html" class="mobile-nav-link" style="font-size: 1rem; margin-top: auto; color: var(--color-text-muted);">Privacy Terms</a>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- ==============================================================================
+       MAIN CORE CONTENT
+       ============================================================================== -->
+  <main id="main-content">
+
+    <!-- 1. RECIPE DETAILS SUBHEADER (Breadcrumb, title, and quick metadata pills) -->
+    <section class="recipe-hero" id="recipe-template-hero">
+      <div class="container">
+        
+        <!-- Breadcrumbs Navigation -->
+        <nav class="recipe-breadcrumb" aria-label="Breadcrumb">
+          <a href="/index.html">Home</a>
+          <span>&rsaquo;</span>
+          <a href="/recipes.html">Recipes</a>
+          <span>&rsaquo;</span>
+          <span class="text-muted">Classic American Burger</span>
+        </nav>
+
+        <!-- Recipe Headline -->
+        <h1 class="recipe-details-title" id="recipe-main-title">Classic American Burger</h1>
+        <p style="margin-bottom: 2rem; max-width: 800px; font-size: 1.1rem; line-height: 1.6;" class="text-muted">The ultimate juicy grilled beef patty served with fresh lettuce, toasted buns, ripe tomatoes, and standard American burger sauce.</p>
+
+        <!-- Quick Facts Meta Box Grid -->
+        <div class="recipe-details-meta">
+          
+          <div class="recipe-meta-pill">
+            <span class="recipe-meta-pill-icon">&#9200;</span>
+            <div>
+              <span class="recipe-meta-pill-label">Prep Time</span>
+              <div class="recipe-meta-pill-value">15 mins</div>
+            </div>
+          </div>
+
+          <div class="recipe-meta-pill">
+            <span class="recipe-meta-pill-icon">&#128293;</span>
+            <div>
+              <span class="recipe-meta-pill-label">Cook Time</span>
+              <div class="recipe-meta-pill-value">10 mins</div>
+            </div>
+          </div>
+
+          <div class="recipe-meta-pill">
+            <span class="recipe-meta-pill-icon">&#127814;</span>
+            <div>
+              <span class="recipe-meta-pill-label">Servings</span>
+              <div class="recipe-meta-pill-value">4 Plates</div>
+            </div>
+          </div>
+
+          <div class="recipe-meta-pill">
+            <span class="recipe-meta-pill-icon">&#127758;</span>
+            <div>
+              <span class="recipe-meta-pill-label">Origin Region</span>
+              <div class="recipe-meta-pill-value">Widespread US</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Google AdSense - Top Leaderboard Sponsor Slot -->
+    <div class="container adsense-container" style="margin-top: 0; margin-bottom: 2.5rem;">
+      <div class="adsense-placeholder">
+        <span class="adsense-badge">Sponsor Advertisement</span>
+        <p class="adsense-text">Responsive Recipe Leaderboard Slot</p>
+        <p class="adsense-desc">(Google AdSense automatically displays highly targeted culinary or household ads here to increase CPM scores)</p>
+      </div>
+    </div>
+
+    <!-- 2. TWO-COLUMN LAYOUT -->
+    <section class="container" style="padding-bottom: 5rem;">
+      <div class="recipe-details-layout">
+        
+        <!-- Left Column: Media assets, Ingredients list, Instruction steps -->
+        <div class="recipe-main-column" id="recipe-core-instructions">
+          
+          <!-- Large image wrapper -->
+          <div class="recipe-details-hero-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1200" alt="Classic American Burger" class="recipe-details-hero-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=1200';">
+          </div>
+
+          <!-- Section A: Checklist Ingredients -->
+          <section id="recipe-ingredients-block">
+            <h2 class="recipe-section-title">Ingredients Checklist</h2>
+            <p style="margin-bottom: 1.5rem; font-size: 0.95rem;" class="text-muted">Tap on individual ingredients below to check them off as you prepare your baking space.</p>
+            
+            <div class="ingredients-list">
+              
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-1">
+                <span class="ingredient-text">1.5 lbs ground beef (80/20 chuck)</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-2">
+                <span class="ingredient-text">4 brioche or standard hamburger buns</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-3">
+                <span class="ingredient-text">4 slices cheddar or American cheese</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-4">
+                <span class="ingredient-text">1 large heirloom tomato, sliced</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-5">
+                <span class="ingredient-text">4 crisp butter lettuce leaves</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-6">
+                <span class="ingredient-text">1 red onion, thinly sliced</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-7">
+                <span class="ingredient-text">2 tbsp unsalted butter (for toasting)</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-8">
+                <span class="ingredient-text">Salt and freshly cracked black pepper to taste</span>
+              </div>
+
+              <div class="ingredient-item">
+                <input type="checkbox" class="ingredient-checkbox" id="ing-9">
+                <span class="ingredient-text">Burger Sauce: 1/3 cup mayonnaise, 2 tbsp ketchup, 1 tbsp sweet pickle relish, 1 tsp yellow mustard</span>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Section B: Step-by-Step cooking instructions -->
+          <section id="recipe-directions-block" style="margin-top: 3rem;">
+            <h2 class="recipe-section-title">Execution Steps</h2>
+            <p style="margin-bottom: 1.5rem; font-size: 0.95rem;" class="text-muted">Follow our professional heat guidelines to ensure perfect moisture and flavor outcomes.</p>
+            
+            <div class="instructions-list">
+              
+              <div class="instruction-step">
+                <div class="instruction-step-num">1</div>
+                <div class="instruction-step-content">
+                  <h3 class="instruction-step-title">Form the Beef Patties</h3>
+                  <p class="instruction-step-text">Divide ground beef into 4 equal portions and shape gently into flat patties about 3/4-inch thick. Press a slight indentation in the center of each patty to prevent puffing.</p>
+                </div>
+              </div>
+
+              <div class="instruction-step">
+                <div class="instruction-step-num">2</div>
+                <div class="instruction-step-content">
+                  <h3 class="instruction-step-title">Mix the Burger Sauce</h3>
+                  <p class="instruction-step-text">In a small bowl, whisk together mayonnaise, ketchup, relish, and mustard until smooth. Set burger sauce aside.</p>
+                </div>
+              </div>
+
+              <div class="instruction-step">
+                <div class="instruction-step-num">3</div>
+                <div class="instruction-step-content">
+                  <h3 class="instruction-step-title">Grill and Sear</h3>
+                  <p class="instruction-step-text">Preheat grill or heavy cast-iron skillet over high-medium heat. Generously season both sides of the patties with salt and pepper.</p>
+                </div>
+              </div>
+
+              <div class="instruction-step">
+                <div class="instruction-step-num">4</div>
+                <div class="instruction-step-content">
+                  <h3 class="instruction-step-title">Melt the Cheddar</h3>
+                  <p class="instruction-step-text">Grill patties for 3-4 minutes per side for medium doneness. In the last minute, lay a cheese slice over each patty and close grill lid to melt.</p>
+                </div>
+              </div>
+
+              <div class="instruction-step">
+                <div class="instruction-step-num">5</div>
+                <div class="instruction-step-content">
+                  <h3 class="instruction-step-title">Toast the Buns</h3>
+                  <p class="instruction-step-text">Spread melted butter on bun faces and toast on the grill for 30 seconds until golden-brown.</p>
+                </div>
+              </div>
+
+              <div class="instruction-step">
+                <div class="instruction-step-num">6</div>
+                <div class="instruction-step-content">
+                  <h3 class="instruction-step-title">Assemble and Serve</h3>
+                  <p class="instruction-step-text">Assemble: spread 1 tbsp of burger sauce on bottom toasted bun, add lettuce, cheesy patty, tomato slices, red onion, and top bun to serve.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Column: Nutrition Label Fact Card (Sticky Sidebar) -->
+        <aside id="recipe-sidebar-nutrition">
+          <div class="nutrition-card">
+            <h2 class="nutrition-card-title">Nutrition Facts</h2>
+            <div class="nutrition-card-subtitle">Serving Size: 1 Completed Burger</div>
+            
+            <div class="nutrition-item nutrition-fact-bold" style="border-bottom: 4px solid var(--color-border);">
+              <span>Amount Per Serving</span>
+              <span></span>
+            </div>
+
+            <div class="nutrition-item nutrition-fact-bold" style="font-size: 1.1rem;">
+              <span>Calories</span>
+              <span>520</span>
+            </div>
+
+            <div class="nutrition-item" style="border-top: 3px solid var(--color-border); justify-content: flex-end; font-size: 0.75rem;">
+              <span class="nutrition-fact-bold">% Daily Value *</span>
+            </div>
+
+            <div class="nutrition-item">
+              <span><span class="nutrition-fact-bold">Total Fat</span> 32g</span>
+              <span class="nutrition-fact-bold">41%</span>
+            </div>
+
+            <div class="nutrition-item" style="padding-left: 1rem;">
+              <span>Saturated Fat 14g</span>
+              <span class="nutrition-fact-bold">70%</span>
+            </div>
+
+            <div class="nutrition-item">
+              <span><span class="nutrition-fact-bold">Sodium</span> 680mg</span>
+              <span class="nutrition-fact-bold">30%</span>
+            </div>
+
+            <div class="nutrition-item">
+              <span><span class="nutrition-fact-bold">Total Carbohydrate</span> 26g</span>
+              <span class="nutrition-fact-bold">9%</span>
+            </div>
+
+            <div class="nutrition-item" style="padding-left: 1rem;">
+              <span>Dietary Fiber 2g</span>
+              <span class="nutrition-fact-bold">7%</span>
+            </div>
+
+            <div class="nutrition-item" style="padding-left: 1rem;">
+              <span>Total Sugars 5g</span>
+              <span></span>
+            </div>
+
+            <div class="nutrition-item" style="border-bottom: 4px solid var(--color-border);">
+              <span><span class="nutrition-fact-bold">Protein</span> 34g</span>
+              <span class="nutrition-fact-bold">68%</span>
+            </div>
+
+            <p class="nutrition-card-footer">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- 3. RELATED RECIPES GRID (Pulls 3 candidates belonging to same family dynamically in main.js) -->
+    <section class="section-padding" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);" id="recipe-related-block">
+      <div class="container">
+        <h2 class="section-title" style="margin-bottom: 3rem;">Similar Comfort Classics</h2>
+        <!-- Grid list which setupRecipeDetailScript() in main.js reads and populates with cards -->
+        <div class="recipe-grid" id="related-recipes-grid" data-current-recipe="classic-burger"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================================================
+       FOOTER SECTION
+       ============================================================================== -->
+  <footer class="main-footer" id="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand-column">
+          <a href="index.html" class="brand-logo footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>American <br> <span class="br"> Home  Recipes </span> <br> </span>
+          </a>
+          <p class="footer-brand-desc">Celebrating the rich culinary diversity and deep historical roots of local confort cooking and baking across the United States.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Recipe Types</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="recipes.html?category=mains">Savory Mains</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=desserts">Baking & Desserts</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=breakfast">Morning Griddle</a></li>
+            <li class="footer-link-item"><a href="recipes.html?category=sides">Crisp Sides</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Company</h4>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="about.html">Author Story</a></li>
+            <li class="footer-link-item"><a href="contact.html">Write to Us</a></li>
+            <li class="footer-link-item"><a href="privacy-policy.html">Privacy & Terms</a></li>
+            <li class="footer-link-item"><a href="404.html">Custom 404</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Sponsors</h4>
+          <p style="font-size: 0.85rem; color: #a8a29e; line-height: 1.5;">This cooking portal is fully optimized with clean structural headers and metadata slots for non-intrusive AdSense sponsors placements.</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 American
+Home Recipes. All rights reserved. Made for food lovers.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="contact.html">Advertise</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link master Vanilla JS -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
